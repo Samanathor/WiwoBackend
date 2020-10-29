@@ -60,3 +60,7 @@ Route::resource('mensajes', App\Http\Controllers\MensajeController::class);
 Route::resource('estudios', App\Http\Controllers\EstudioController::class);
 
 Route::resource('perfiles', App\Http\Controllers\PerfilController::class);
+
+Route::get('samanathor', function () {
+    dd("ramparapampam");
+});
