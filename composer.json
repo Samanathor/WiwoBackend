@@ -12,6 +12,7 @@
         "appointer/swaggervel": "dev-master",
         "fideloper/proxy": "^4.2",
         "fruitcake/laravel-cors": "^2.0",
+        "google/apiclient": "^2.8",
         "guzzlehttp/guzzle": "^7.0.1",
         "infyomlabs/coreui-templates": "8.0.x-dev",
         "infyomlabs/laravel-generator": "8.0.x-dev",

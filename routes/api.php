@@ -1,7 +1,9 @@
 <?php
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\App;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\API\UserAPIController;
 
 /*
 |--------------------------------------------------------------------------
@@ -52,3 +54,13 @@ Route::resource('mensajes', App\Http\Controllers\API\MensajeAPIController::class
 Route::resource('estudios', App\Http\Controllers\API\EstudioAPIController::class);
 
 Route::resource('perfiles', App\Http\Controllers\API\PerfilAPIController::class);
+
+Route::post('facebook_login', [UserAPIController::class, 'loginFacebook']);
+
+Route::post('google_login', [UserAPIController::class, 'loginGoogle']);
+
+Route::post('login', [UserAPIController::class, 'login']);
+
+Route::post('register', [UserAPIController::class, 'register']);
+
+Route::get('userInfo', [UserAPIController::class, 'info']);
